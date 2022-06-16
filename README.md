@@ -71,6 +71,8 @@ The documentation will be hosted publicly on Github Pages, so make sure you do n
 
 ### 2.1. Generate your code documentation
 
+For Python:
+
 To generate code documentation you have to add the tool to your work environment. For `Sphinx` you can add this tool with `pip`.
 
 ```bash
@@ -83,6 +85,8 @@ make html
 ```
 
 Your website will be available in `./_build/html`
+
+For C++:
 
 Generating code documentation for c++ requires different steps, which requires the use of `Doxygen` instead.
 
