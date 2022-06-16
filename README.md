@@ -98,9 +98,9 @@ After creation add the deploy step
 
 ### 3.1. Status badges
 
-TODO: Furkan
+With Github actions, it is possible to provide workflow status badges which show whether a workflow is currently failing or passing. A common place to place a status badge is in the `README.md`.
 
-https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge
+A template can be generated, which can be found under Actions > Workflows. This template can be placed in `README.md`.
 
 ### 3.2. Feedback in pull requests
 
