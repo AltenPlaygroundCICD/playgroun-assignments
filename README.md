@@ -6,7 +6,7 @@ Welcome to the ALTEN playground on Continuous Integration and Continuous Deploym
 
 ### 1.1. Getting ready
 
-To start the playground assignments you must have a Github account. Create one on [Github](https://github.com). After login fork our example repository in [AltenPlaygroundCICD](https://github.com/AltenPlaygroundCICD). Feel free to pick Python or C++ as a starter. Note that our C++ example might require some extra effort to get going.
+To start the playground assignments you must have a Github account. Create one on [Github](https://github.com/signup). After login fork our example repository in [AltenPlaygroundCICD](https://github.com/AltenPlaygroundCICD). Feel free to pick Python or C++ as a starter. Note that our C++ example might require some extra effort to get going.
 
 ### 1.2. Run your first pipeline
 
