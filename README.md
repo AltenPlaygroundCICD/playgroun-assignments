@@ -141,17 +141,17 @@ Some challenges:
 
 ### 3.3. Caches
 
-TODO:
+Some builds might take quite some time to complete. Parts of a build could be cached to speed up next builds in your repository. For Python this could be your virtual environment with all packages to install. For C++ it might be your dependencies, but better is ccache. Can you include a cache to make subsequent builds faster?
 
 ### 3.4. Code coverage
 
-TODO:
+Having tests for your code is important. Having automated tests is even more important as you can´t forget to run them. All pull requests should run these to guarantee the quality of your team. With code coverage you can see what lines are part of existing unit tests and where gaps are to cover. Having code coverage in your pipeline allows you to track coverage over time and also drops in coverage. If a pull request lowers the total coverage you could automatically decline the contribution as someone did not create tests for the new code? Try to add a figure on your code coverage per cent. For this example just a print in the build output is fine.
 
 ### 3.5. Move all tools into your own container
 
 During the assignments we added more tools to use during the pipeline. This demonstrates you can modify your environment as you go. A drawback of adding more tools is that on every run you have to spent some time to download and install these. Depending on the size of tools this might impact your runtime quite significantly.
 
-Alternatively, you can encapsulate all required tools in a prebuild container. You can take the container used in this pipeline as a base template and add a few more tools. Push this container to a registry like the DockerHub and reference it from the pipeline. Any run starting with this container can skip all steps to install the tools.
+Alternatively, you can encapsulate all required tools in a prebuild container. You can take the container used in this pipeline as a base template and add a few more tools. Push this container to a registry like the GitHub Container Registry and reference it from the pipeline. Any run starting with this container can skip all steps to install the tools. Can you make a pipeline to build this container automatically and use it in the playground pipeline to build your work?
 
 ### 3.6. Templating the job
 
