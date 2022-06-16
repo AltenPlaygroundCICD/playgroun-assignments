@@ -10,6 +10,8 @@ To start the playground assignments you must have a Github account. Create one o
 
 ### 1.2. Run your first pipeline
 
+Use Github actions to kick-start your first pipeline with predefined jobs. Try and get your unit test running. Github will have a Python app starter and CMake starter available to pick and quickly get up and running. As soon as you add the workflow files to the repository Github will pickup on the instructions and schedule your pipeline to run.
+
 ### 1.3. Make the unit tests work
 
 In the provided example you will notice the first run fails. Oops! Some unit tests are not correct.
@@ -61,7 +63,11 @@ clang-format -n -- $(git ls-files '*.cpp' '*.h')
 
 ### 1.6. Ensure a Pull Request cannot be merged if the build has failed
 
+Go and make a faulty commit on a new branch. This is to check your pipeline will pick-up on parts that are not intended. Are Pull Requests blocked if the code is not passing your checks?
+
 ### 1.7. Publish your artifacts
+
+As a final step you can publish artifacts on your buildables. Add an action to Upload a Build Artifact to store your precious buildables. These can be downloaded in the workflow summary if you open one of your flows. For Python you might want to create a package to install? Or just a precompiled version of a file? In the C++ example you can upload the binary that is created in the pipeline.
 
 ## 2. Continuous deployment
 
@@ -108,7 +114,7 @@ Github Pages are activated on account level or repository level. For this assign
 
 ### 2.3. Deploy the pages
 
-After creation add the deploy step
+After creation add the deploy step to your workflow. This step will upload all html files to a storage location provided by Github. After upload it might take up to 5 minutes to publish all files on your new page. Is everything in there?
 
 ## 3. Deep dive
 
