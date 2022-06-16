@@ -84,6 +84,18 @@ make html
 
 Your website will be available in `./_build/html`
 
+Generating code documentation for c++ requires different steps, which requires the use of `Doxygen` instead.
+
+```bash
+apt-get install doxygen
+```
+
+```bash
+doxygen Doxyfile
+```
+
+Your website will be available in `./Doxygen/html`
+
 ### 2.2. Activate pages for the playground repository
 
 Github Pages are activated on account level or repository level. For this assignment you should active pages on repository level. This will create a shareable link for you to access the website.
