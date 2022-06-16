@@ -52,11 +52,11 @@ pylint $(git ls-files '*.py')
 For C++:
 
 ```bash
-TODO: apt-get install clang?#?#
+apt-get install clang-format
 ```
 
 ```bash
-TODO: clang-format ...
+clang-format -n -- $(git ls-files '*.cpp' '*.h')
 ```
 
 ### 1.6. Ensure a Pull Request cannot be merged if the build has failed
